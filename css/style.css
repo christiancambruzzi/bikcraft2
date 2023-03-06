@@ -1,18 +1,28 @@
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+  padding-bottom: 600px;
+}
+
+h1,
+ul,
+p {
+  margin: 0;
 }
 
 ul {
-  margin: 0;
   padding: 0;
   list-style: none;
 }
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
+img {
+  max-width: 100%;
+}
 .header-bg {
   background-color: #000000;
 }
@@ -42,7 +52,7 @@ a {
   position: relative;
 }
 
-.header-menu a:after{
+.header-menu a:after {
   content: "";
   display: block;
   height: 2px;
@@ -50,12 +60,76 @@ a {
   background: #ffffff;
   margin-top: 4px;
   position: absolute;
-  transition: .4s;
+  transition: 0.4s;
 }
 
-.header-menu a:hover:after{
+.header-menu a:hover:after {
   width: 100%;
 }
+
+/* ###### INTRODUÇÃO ###### */
+
+.introducao-bg {
+  background: #000000;
+  color: #ffffff;
+  box-shadow: inset 0 -120px #ffffff;
+}
+
+.introducao {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  gap: 0 40px;
+  padding: 0 20px;
+}
+
+.introducao-conteudo {
+  align-self: end;
+  padding-bottom: 200px;
+}
+
+.introducao h1 {
+  margin-bottom: 32px;
+  font-size: 64px;
+  line-height: 1.125;
+}
+
+.introducao h1 span {
+  color: #ffbb00;
+}
+
+.introducao p {
+  margin-bottom: 20px;
+  font-size: 24px;
+  line-height: 1.5;
+  color: #b2b2b2;
+}
+
+.introducao a {
+  display: inline-block;
+  padding: 16px 32px;
+  background: linear-gradient(#ffbf00, #f2a50c);
+  border-radius: 4px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  text-transform: uppercase;
+  color: #332200;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1.33;
+}
+
+.introducao a:hover {
+  background: linear-gradient(#ffb60d, #e59317);
+}
+
+.introducao img {
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
 
 /* ###### R E S P O N S I V E ###### */
 
@@ -69,20 +143,20 @@ a {
     padding: 12px 16px;
     border-radius: 4px;
   }
-  .header-menu a:after{
+  .header-menu a:after {
     display: none;
   }
-  .header-menu a:hover{
-    background-color: #f2f2f2;
-    color: #111111
+  .header-menu a:hover {
+    background-color: #b2b2b2;
+    color: #111111;
   }
 }
 
-@media (max-width: 600px){
-  .header-menu{
+@media (max-width: 600px) {
+  .header-menu {
     gap: 12px;
   }
-  .header-menu a{
+  .header-menu a {
     padding: 8px 12px;
     font-size: 14px;
   }
