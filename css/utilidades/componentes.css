@@ -1,3 +1,5 @@
+/* C O N T A I N E R  */
+
 .container{
   max-width: 1200px;
   padding-left: 20px;
@@ -31,3 +33,25 @@
     font-size: 1rem;
   }
 }
+
+/* L I N K */
+
+.link{
+  display: inline-block;
+  color: var(--cor-p1);
+  font: 500 1.5rem/1.5 "Poppins", sans serif;
+  text-transform: uppercase;
+}
+
+.link:hover{
+  color: var(--cor-0);
+}
+
+.link::after{
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: currentColor;
+}
+
