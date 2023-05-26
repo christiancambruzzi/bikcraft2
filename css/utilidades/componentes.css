@@ -34,6 +34,16 @@
   }
 }
 
+/* B O T A O S E C U N D A R I O */
+.botao.secundario{
+  background: var(--cor-10);
+  color: var(--cor-2);
+}
+
+.botao.secundario:hover{
+  background: var(--cor-9);
+}
+
 /* L I N K */
 
 .link{
